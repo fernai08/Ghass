@@ -1,0 +1,188 @@
+/* https://github.com/sefyudem/Contact-Us-Form/blob/master/style.css */
+
+body {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    font-family:'Special Elite', cursive; ;
+	background-color: lightslategray;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+  }
+  nav {
+	display: flex;
+	justify-content: space-between;
+	min-height: 8vh;
+  }
+
+
+  nav img {
+	max-height: 80px;
+	display: flex;
+  }
+  .navbar {
+	display: flex;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	justify-content:space-between;
+	background-color: rgba(0, 0, 0, 0);
+	z-index: 2; 
+  }
+  
+  .nav-links {
+	display: flex;
+	justify-content: space-around;
+	
+  }
+  
+  .nav-links li {
+	list-style: none;
+  }
+  
+  .nav-links li a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+  }
+  .nav-links li a:hover{
+	background-color: #343a3e6c;
+  }
+  footer {
+	display: flex;
+	justify-content: center;
+	color: #fff;
+	margin-top: auto;
+	margin-right: 16px;
+  }
+  .social-links{
+	display: flex;
+	justify-content: center;
+
+ }
+  footer .copyright {
+	margin:0px 30px ;
+	justify-content: center;
+  }
+  footer img{
+	display: flex;
+	max-height: 50px;	
+  }
+
+  
+  @media (max-width: 768px) {
+	nav {
+	  padding: 10px 12px;
+	}
+  }
+  
+  @media (max-width: 480px) {
+	nav li a {
+	  padding: 8px 10px;
+	}
+  }
+
+  /* CSS for contact goes here */
+
+
+.contact-background {
+    object-fit: contain;
+    position: fixed;
+    filter: blur(5px);
+	right: 0;
+	bottom: 0;
+	width: auto;
+	height: auto;
+	z-index: -1;
+  }
+  
+  .container-contact-form{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  
+  }
+
+    
+  .contact-form{
+    background-image: url(/MEDIA/Contact/Contact\ form.png);
+    background-size: cover;
+    position: fixed;
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 19);
+    border: none;
+    border-radius: 30%;
+
+  }
+ 
+
+
+
+.right{
+  padding-right: 120px;
+  padding-left: 90px;
+  padding-bottom: 110px;
+  padding-top: 64px;
+}
+h2{
+    position: relative;
+    padding: 0 0 10px;
+    margin-bottom: 10px;
+}
+
+
+.right .field{
+    display: flex;
+    width: 85%;
+	border: none;
+	outline: none;
+	background-color: #fce2a8;
+	padding: 0.5rem 1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+textarea{
+	min-height: 150px;
+}
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #0000006a;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+.btn:hover{
+    background-color: #2e2f2e;
+}
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+@media screen and (max-width: 880px){
+	.contact-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 200px;
+	}
+}

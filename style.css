@@ -3,6 +3,8 @@
 body {
 	margin: 0;
 	padding: 0;
+  box-sizing: border-box;
+  font-family:'Special Elite', cursive; ;
 	background-color: lightslategray;
 	display: flex;
 	flex-direction: column;
@@ -19,14 +21,7 @@ body {
 	height: auto;
 	z-index: -1;
   }
-  .paper-background {
-	position: fixed;
-	right: 0;
-	bottom: 0;
-	width: 100%;
-	height: 100%;
-	z-index: -1;
-  }
+  
   nav {
 	display: flex;
 	justify-content: space-between;
@@ -46,7 +41,6 @@ body {
 	width: 100%;
 	justify-content:space-between;
 	background-color: rgba(0, 0, 0, 0);
-	font-family: 'Special Elite', cursive;
 	z-index: 2; 
   }
   
@@ -73,7 +67,6 @@ body {
   footer {
 	display: flex;
 	justify-content: center;
-	font-family: 'Special Elite', cursive;
 	color: #fff;
 	margin-top: auto;
 	margin-right: 16px;
@@ -110,7 +103,14 @@ body {
 
 /* Css for the Portfolio goes below here */
 
-
+.paper-background {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+  }
 .container{
     max-width: 1140px;
     margin: auto;
@@ -200,4 +200,36 @@ body {
 .portfolio .portfolio-gallery .item img{
     width: 100%;
     display: block;
+}
+
+
+
+
+
+.contact-background {
+  position: fixed;
+  max-width: 100%;
+  height: auto;
+  z-index: -1
+  ;
+}
+
+.container-contact-form{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px 100px;
+
+}
+.container-contact-form::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  
 }
