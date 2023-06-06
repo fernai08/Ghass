@@ -1,0 +1,92 @@
+<!--link to gallery
+https://codingwithnick.in/portfolio-filter-using-html-css-javascript/-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+    <script src="cript.js"></script>
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <img class="paper-background" src="/MEDIA/fondo_1400x900 copy.jpg" alt="background-portfolio">
+    <nav class="navbar">
+    <div class="heading">
+      <a title="Ghass" href="/home.html"><img src="/MEDIA/GHASS_fill_white copy.png" alt="Ghass logo"></a>
+
+    </div>
+      <ul class="nav-links">
+        
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="filter-buttons">
+          <ul id="filter-btns">
+            <li class="active " data-target="latest">Latest Works</li>
+            <li data-target="music">Music</li>
+            <li data-target="audiovisuals">Audiovisuals</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="portfolio-gallery">
+        <div class="item" data-id="audiovisuals">
+          <div class="inner">
+            <img src="/MEDIA/Portfolio/Cartel Anís del Mono.jpg" alt="portfolio">
+
+          </div>
+        </div>
+        <div class="item" data-id="music">
+          <div class="inner">
+            <img src="/MEDIA/Portfolio/a1014140016_10.jpg" alt="portfolio">
+            
+          </div>
+        </div>
+        <div class="item" data-id="audiovisuals">
+          <div class="inner">
+            <img src="/MEDIA/Portfolio/The bride Token.jpg" alt="portfolio">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <footer>
+    <div class="social-links">
+      <a class="instalogo" href="#instagramLink"
+        ><img
+          src="/MEDIA/social-media-icons-vector-set-with-facebook-instagram-twitter-tiktok-youtube-logos/spotify-app-logo-spotify-icon-transparent-free-png.png "
+          alt=""
+      /></a>
+    </div>
+    <div class="copyright">
+      <p>2023 Gháss. All rights reserved</p>
+    </div>
+    <div class="social-links">
+      <a class="ytlogo" href="#youtubeLink"
+        ><img
+          src="/MEDIA/social-media-icons-vector-set-with-facebook-instagram-twitter-tiktok-youtube-logos/vecteezy_youtube-logo-png-youtube-icon-transparent_18930575_594.png"
+          alt=""
+      /></a>
+    </div>
+  </footer>
+  </body>
+</html>
