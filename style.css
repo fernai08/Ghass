@@ -76,7 +76,10 @@ body {
 	justify-content:space-between;
 	background-color: rgba(0, 0, 0, 0);
 	z-index: 2; 
+  border-bottom: 2px solid transparent;
+
   }
+
   
   .nav-links {
 	display: flex;
@@ -110,11 +113,7 @@ body {
 	margin-top: auto;
 	margin-right: 16px;
   }
-  .social-links{
-	display: flex;
-	justify-content: center;
-
- }
+ 
   footer .copyright {
 	margin:0px 30px ;
 	justify-content: center;
