@@ -1,0 +1,336 @@
+/* Css for the main pages set up goes below here */
+
+* {
+    font-family:'Special Elite', cursive;
+  }
+  body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: rgb(255, 255, 255);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px; 
+    }
+  
+    .navbar {
+      flex-direction: column; 
+      align-items: center;
+      padding: 10px; 
+    }
+  
+    .navbar img {
+      max-height: 60px; 
+      margin-bottom: 10px; 
+    }
+  
+    .nav-links {
+      flex-direction: column; 
+      align-items: center;
+    }
+  
+    .nav-links li {
+      margin: 10px 0; 
+    }
+  }
+  
+    .video-background {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -1;
+    }
+    .home-container{
+      display: flex;
+      margin: auto;
+      top: 50%;
+  
+    }
+   .logo-background{
+    display: flex;
+  
+   }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      min-height: 8vh;
+    }
+  
+  
+    nav img {
+      max-height: 80px;
+      display: flex;
+    }
+    .navbar {
+      display: flex;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      justify-content:space-between;
+      background-color: rgba(0, 0, 0, 0);
+      z-index: 2; 
+  
+    }
+  
+    
+    .nav-links {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      
+    }
+    
+    .nav-links li {
+      list-style: none;
+    margin: 0 10px;
+    }
+    
+    .nav-links li a {
+      display: inline-block;
+      color: #fff;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    .nav-links li a:hover{
+      background-color: #343a3e6c;
+    }
+    .nav-links li a img {
+      width: 50px;
+    }
+    footer {
+      display: flex;
+      justify-content: center;
+      color: #fff;
+      margin-top: auto;
+      margin-right: 16px;
+    }
+   
+    footer .copyright {
+      margin:0px 30px ;
+      justify-content: center;
+    }
+    .footer div {
+      display: flex;
+      justify-content: center;
+    }
+  
+  
+    
+    @media (max-width: 768px) {
+      .nav {
+        
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .nav-links li a {
+        padding: 8px 10px;
+        flex-direction:row;
+        align-items:center;
+        margin-left: 0px;
+        margin-right: 5px;
+      }
+    }
+    @media (max-width: 768px) {
+      .navbar {
+        position: relative;
+        flex-direction:row;
+        align-items:center;
+       
+
+      }
+    
+      .nav-links {
+        flex-direction: row;
+        margin-top: 20px;
+        margin-left: 0px;
+        max-height: 50px;
+      }
+    
+      .nav-links li {
+       
+      }
+    }
+  
+    
+  
+  
+  
+  /* Css for the Portfolio goes below here */
+  
+  .paper-background {
+      position: fixed;
+    background-size: cover;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+  }
+  
+  .container {
+      max-width: 1140px;
+      margin: auto;
+      font-family: 'Special Elite', cursive;
+  }
+  
+  .row {
+      display: flex;
+      flex-wrap: wrap;
+  }
+  
+  .section-title {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 40px;
+  }
+  
+  .section-title h1 {
+      display: inline-block;
+      font-size: 35px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #000000;
+      margin: 0 0 5px;
+      position: relative;
+  }
+  
+  .section-title h1:before {
+      content: '';
+      left: 0;
+      position: absolute;
+      height: 2px;
+      right: 32%;
+      background-color: #febd01;
+      bottom: 0px;
+  }
+  
+  .text-center {
+      text-align: center!important;
+  }
+  
+  .text-right {
+      text-align: right!important;
+  }
+  
+  .portfolio {
+      padding: 100px 7px;
+  }
+  
+  .portfolio .section-title h1:before {
+      left: 30%;
+  }
+  
+  .portfolio .filter-buttons {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 20px;
+  
+  }
+  
+  .portfolio .filter-buttons ul {
+      list-style: none;
+      text-align: center;
+      padding: 0;
+  }
+  
+  .portfolio .filter-buttons ul li {
+      color: #ffffff;
+      font-weight: 500;
+      font-size: 16px;
+      display: inline-block;
+      margin: 0px 8px;
+      text-transform: uppercase;
+      cursor: pointer;
+      padding-bottom: 0px;
+  }
+  
+  .portfolio .filter-buttons ul li.active {
+      color: #febd01;
+      border-bottom: 2px solid #febd01;
+  }
+  
+  
+  
+  .portfolio .portfolio-gallery {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .portfolio .portfolio-gallery .item {
+    flex: 0 0 calc(33.33% - 16px);
+    max-width: calc(33.33% - 16px);
+    position: relative;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .portfolio .portfolio-gallery .item:hover {
+    transform: scale(1.05);
+    
+  }
+  
+  
+  @media (max-width: 768px) {
+    .portfolio .portfolio-gallery .item {
+      flex: 0 0 calc(50% - 16px);
+      max-width: calc(50% - 16px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .portfolio .portfolio-gallery .item {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  
+  .portfolio .portfolio-gallery .item .inner {
+    position: relative;
+  
+  }
+  
+  .portfolio .portfolio-gallery .item img {
+    width: 100%;
+    display: block;
+    
+  }
+  .portfolio .portfolio-gallery .item .thumbnail {
+    width: 100%;
+    display: block;
+    transition: opacity 0.3s ease;
+  }
+  .portfolio .portfolio-gallery .item .spotify-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .portfolio .portfolio-gallery .item:hover .thumbnail {
+    opacity: 0;
+  }
+  
+  .portfolio .portfolio-gallery .item:hover .spotify-player {
+    opacity: 1;
+  }
+  
+  .hidden {
+    display: none;
+  }

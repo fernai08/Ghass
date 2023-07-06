@@ -12,12 +12,10 @@
       rel="stylesheet"
     />
     <script src="script.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <title>Home</title>
   </head>
   <body>
-    <video class="video-background" autoplay muted loop>
-      <source src="./MEDIA/home-bg-video.mp4" type="video/mp4" />
-    </video>
     <nav class="navbar">
       <div class="heading">
         <a title="Ghass" href="index.html"
@@ -31,6 +29,23 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
+    <video class="video-background" autoplay muted loop playsinline>
+      <source src="./MEDIA/home/00_home web - 2714x1480.mp4" type="video/mp4" />
+    </video>
+    <div class="home-container">
+      <div class="logo-background">
+        <lottie-player
+          src="./MEDIA/home/data.json"
+          background="transparent"
+          speed="1"
+          mode="normal"
+          style="width: 600px; height: 600px"
+          loop
+          autoplay
+          playsinline
+        ></lottie-player>
+      </div>
+    </div>
     <footer>
       <div class="copyright">
         <p>Gháss © 2023 . All rights reserved</p>
